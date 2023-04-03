@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "pcr7MPgUki4CgBy5VRxHGDuKPmhSWR7RVLhQCHl2jTGUIQCL7Ea5Ba1nfjPX25oBtEHNElj5k3UnhD2QQgmWFw==",
+  "success": true,
+  "projectFilePath": "E:\\CSharp_learning\\CSharp_learning.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "You are running the 'restore' operation with an 'HTTP' source, 'http://nexus:8081/repository/nuget-private/'. Non-HTTPS access will be removed in a future version. Consider migrating to an 'HTTPS' source."
+    }
+  ]
+}

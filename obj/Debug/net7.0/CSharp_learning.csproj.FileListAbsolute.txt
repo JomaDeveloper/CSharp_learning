@@ -1,0 +1,15 @@
+E:\CSharp_learning\bin\Debug\net7.0\CSharp_learning.exe
+E:\CSharp_learning\bin\Debug\net7.0\CSharp_learning.deps.json
+E:\CSharp_learning\bin\Debug\net7.0\CSharp_learning.runtimeconfig.json
+E:\CSharp_learning\bin\Debug\net7.0\CSharp_learning.dll
+E:\CSharp_learning\bin\Debug\net7.0\CSharp_learning.pdb
+E:\CSharp_learning\obj\Debug\net7.0\CSharp_learning.csproj.AssemblyReference.cache
+E:\CSharp_learning\obj\Debug\net7.0\CSharp_learning.GeneratedMSBuildEditorConfig.editorconfig
+E:\CSharp_learning\obj\Debug\net7.0\CSharp_learning.AssemblyInfoInputs.cache
+E:\CSharp_learning\obj\Debug\net7.0\CSharp_learning.AssemblyInfo.cs
+E:\CSharp_learning\obj\Debug\net7.0\CSharp_learning.csproj.CoreCompileInputs.cache
+E:\CSharp_learning\obj\Debug\net7.0\CSharp_learning.dll
+E:\CSharp_learning\obj\Debug\net7.0\refint\CSharp_learning.dll
+E:\CSharp_learning\obj\Debug\net7.0\CSharp_learning.pdb
+E:\CSharp_learning\obj\Debug\net7.0\CSharp_learning.genruntimeconfig.cache
+E:\CSharp_learning\obj\Debug\net7.0\ref\CSharp_learning.dll
