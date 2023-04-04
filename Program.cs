@@ -5,36 +5,45 @@ namespace csharp_learning{
     class Program{
         
         static void Main() {
-            // int number;
-            // number = 0;
+            //Converting data types
+            Console.Write("Введите число с точкой: ");
+            float user_input = (float)Convert.ToDouble(Console.ReadLine());
+            // float user_input = float.Parse(Console.ReadLine());
 
-            int number = 10; // Declare the variable with integer type.
-            Console.WriteLine(number);
-            number = 0; //We can change this variable.
-            string word = "Variable: ";
-            // Console.WriteLine("Variable:" + number);
-            Console.WriteLine(word + number);
+            //Maths Operations
+            float result;
+            result = user_input + 10f;
+            // result = user_input - 15f;
+            // result = user_input * 15f;
+            // result = user_input / 5f;
+            // result = user_input % 10f;
+            // result *= 2f
+            // result++ or result --
 
-            //Variable types
-            // uint - only positive numbers.
-            // byte - number until 255 or -255. Integer type require more operational memory than byte.
-            // short - number in a range until 32650?. Less memory than int but more than byte.
-            // long - more than int.
+            Console.WriteLine("Переменная: " + result);
 
-            //float - decimal numbers. It is important to add "f" at the end of the number like float num = 4.545f;
-
-            //string - for text. string word = "Hello";
-            //char - for a 1 symbol. char symbol = 's';
-
-            //bool - False or True. bool isHappy = true; They are used mostly in loops or conditionals(if).
-
-            int num1 = 0, num2 = 0; //We can declare multiple variables.
-            num1 = Convert.ToInt32(Console.ReadLine()); //Everything that comes from user in Terminal has the type of string even if it is a number.
-            num2 = Convert.ToInt32(Console.ReadLine()); //Everything that comes from user in Terminal has the type of string even if it is a number.
-            Console.WriteLine("First:" + num1);
-            Console.WriteLine("Second:" + num2);
         }
 
     }
 
 }
+
+/* In C#, an explicit cast is a way to convert a value of one type to another type, 
+but with the possibility of data loss or exceptions. When an explicit cast is used, 
+the compiler requires that the cast be explicitly stated in the code.
+
+An explicit cast is used to convert a value from a larger data type to a smaller one, 
+or from one data type to another that is not implicitly convertible. 
+For example, you might use an explicit cast to convert a double to a float, or an int to a short.
+
+Here's an example of how to use an explicit cast in C#:
+
+double d = 3.14159;
+float f = (float)d; // Explicit cast from double to float
+In this example, the value of the double variable d is converted to a float using an explicit cast. 
+Since a float has a smaller range and precision than a double, some data loss may occur during the conversion.
+
+It's important to note that if the value being cast cannot be represented by the target data type, 
+an exception will be thrown at runtime. For example, if you try to cast a value of 1000000000000 to an int, 
+an OverflowException will be thrown, because the value is too large to fit in an int.
+*/
