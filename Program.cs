@@ -5,20 +5,19 @@ namespace csharp_learning{
     class Program{
         
         static void Main() {
-            // Library Math provides many maths operations.
-            // Console.WriteLine(Math.PI);
-            // Console.WriteLine(Math.Abs(-20));
-            // Console.WriteLine(Math.Ceiling(4.11f));
-            // Console.WriteLine(Math.Floor(4.11f));
-            // Console.WriteLine(Math.Round(4.11f));
-            // Console.WriteLine(Math.Min(5, 0));
-            // Console.WriteLine(Math.Max(5, 0));
-            // Console.WriteLine(Math.Pow(5, 2)); // Степень
+           
+            int a = 3;
+            string word = "hello";
+            bool isHappy = true; 
 
-            Console.WriteLine("Введите радиус круга: ");
-            double rad = Convert.ToDouble(Console.ReadLine());
-            double area = Math.PI * Math.Pow(rad, 2);
-            Console.WriteLine("Площадь круга с радиусом {0} равна {1}", rad, Math.Round(area, 2)); // Вывод можно сделать и так.
+            if(a > 7) { 
+                Console.WriteLine("1");
+            } else if(a < 5 && isHappy) // && - and; || - or
+                Console.WriteLine("2"); // Если после условия 1 строчка кода, то можно не ставить {}.
+            else {
+                Console.WriteLine("3");
+            }
+
         }
 
     }
