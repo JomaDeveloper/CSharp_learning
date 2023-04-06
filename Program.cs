@@ -6,33 +6,40 @@ namespace csharp_learning{
     class Program{
         
         static void Main() {
-          short[] nums = {1, 2, 3, 4, 5};
+          int res_1 = Summa_2(1,2);
+          Console.WriteLine(res_1.ToString());
 
-          // удобен при работе с двумерными массивами тоже, он перебирает каждый элемент массива в массиве тоже.
-          foreach(short el in nums){
-            Console.WriteLine(el);
+          byte[] nums = {5, 6, 7};
+          byte res_2 = Ssum(nums);
+          Console.WriteLine("Результат: " + res_2);
+        }
+
+        // Декларируя public, мы обозначаем, что может обращаться к этой функции во всех классах, а не только Program.
+        // Static говорит о том, что мы сможет обращаться к этой функции просто через название класса, а не создавать объект
+        // на основе этого класса.
+        // Void означает, что функция ничего не возвращает.
+        public static void Print(string word = "Hi"){
+          Console.WriteLine(word);
+        }
+
+        public static void Summa(int x, int y){
+          int res = x + y;
+          Print("результат: " + res);
+        }
+
+        // Данная функция возвращает int
+        public static int Summa_2(int x, int y){
+          return x + y;
+        }
+
+        public static byte Ssum(byte[] digits){
+          byte summ = 0;
+          foreach(byte el in digits){
+            summ += el;
           }
-
-          // Динамические массивы позволяют не указывать точное количество элементов массива.
-          // На его обработку уходит больше ресурсов.
-          // Необходимо использовать using System.Collections.Generic;
-          List<int> numbers = new List<int> (){
-            4, 6, 7
-          };
-          numbers.Add(40);
-          numbers.Remove(40);
-          numbers.Sort();
-          numbers.Reverse();
-          numbers.Clear();
-          numbers.Contains(0); // True or False
-
-          foreach(int i in numbers){
-            Console.WriteLine(i);
-          }
-
-
-
-      }
+          
+          return summ;
+        }
 
 
     }
