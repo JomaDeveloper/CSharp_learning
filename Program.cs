@@ -6,42 +6,27 @@ namespace csharp_learning{
     class Program{
         
         static void Main() {
-          int res_1 = Summa_2(1,2);
-          Console.WriteLine(res_1.ToString());
+          string word = "Hello";
+          word += "!";
 
-          byte[] nums = {5, 6, 7};
-          byte res_2 = Ssum(nums);
-          Console.WriteLine("Результат: " + res_2);
-        }
+          // Console.WriteLine(word.Length);
+          // word = String.Concat(word, "!!!");
+          // Console.WriteLine(String.Compare(word,"Hello!!"));
 
-        // Декларируя public, мы обозначаем, что может обращаться к этой функции во всех классах, а не только Program.
-        // Static говорит о том, что мы сможет обращаться к этой функции просто через название класса, а не создавать объект
-        // на основе этого класса.
-        // Void означает, что функция ничего не возвращает.
-        public static void Print(string word = "Hi"){
-          Console.WriteLine(word);
-        }
+          // string people = "Alex,Bob,John";
+          // string[] names = people.Split(new char[]{','});
+          // foreach(string el in names)
+          //   Console.WriteLine(el);
 
-        public static void Summa(int x, int y){
-          int res = x + y;
-          Print("результат: " + res);
-        }
+          // people = String.Join(" ", names);
+          //   Console.WriteLine(people);
 
-        // Данная функция возвращает int
-        public static int Summa_2(int x, int y){
-          return x + y;
-        }
-
-        public static byte Ssum(byte[] digits){
-          byte summ = 0;
-          foreach(byte el in digits){
-            summ += el;
-          }
+          // System.Console.WriteLine(word.Trim()); // Delete spaces
+          // System.Console.WriteLine(word.Substring(0, word.Length - 1));
           
-          return summ;
-        }
+          // There are meany methods for string.
+          
 
-
-    }
-        
+       }
+    }    
 }
