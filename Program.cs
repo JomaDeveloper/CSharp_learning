@@ -5,7 +5,7 @@ namespace csharp_learning{
 
     class Program{
         
-        static void Main() {
+        static void Main_add() {
           // System.Console.WriteLine("Введите текст: ");
           // string text = Console.ReadLine();
           // Использование изолированного кода. Как в Python with
