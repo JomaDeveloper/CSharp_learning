@@ -5,7 +5,7 @@ namespace csharp_learning{
 
     class TryC{
 
-        static void Main() {
+        static void Main_add() {
         
             // try{
             //     int num = Convert.ToInt32(Console.ReadLine());

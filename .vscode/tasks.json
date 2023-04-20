@@ -22,7 +22,8 @@
                 "publish",
                 "${workspaceFolder}/CSharp_learning.csproj",
                 "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
+                "/consoleloggerparameters:NoSummary",
+                "-nowarn"
             ],
             "problemMatcher": "$msCompile"
         },
