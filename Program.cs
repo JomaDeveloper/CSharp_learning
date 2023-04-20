@@ -5,22 +5,27 @@ namespace csharp_learning{
 
     class Program{
         
-        static void Main_add() {
-          // System.Console.WriteLine("Введите текст: ");
-          // string text = Console.ReadLine();
-          // Использование изолированного кода. Как в Python with
-          // using(FileStream stream = new FileStream("info.txt", FileMode.OpenOrCreate)) {
-          //   byte[] array_t = System.Text.Encoding.Default.GetBytes(text);
-          //   stream.Write(array_t, 0, array_t.Length);
-          // }
+        static void Main() {
+          // Создаем объект. Он имеет доступен ко всем характеристикам класса.
+            Class_learn bot = new Class_learn();
+            bot.name = "Bot";
+            bot.weight = 800;
+            bot.coordinates = new byte [] {0, 0, 0};
 
-          using(FileStream stream1 = File.OpenRead("info.txt")){
-            byte [] array = new byte[stream1.Length];
-            stream1.Read(array, 0, array.Length);
+            System.Console.WriteLine(bot.name + " Weight:" + bot.weight);
 
-            string textFromFile = System.Text.Encoding.Default.GetString(array);
-            System.Console.WriteLine(textFromFile);
-          }
+          // Создаем другой объект на основе того же самого класса.
+            Class_learn killer = new Class_learn();
+            killer.name = "Killer";
+            killer.weight = 1000;
+            killer.coordinates = new byte [] {0, 0, 10};
+          
+
+          // Можем вызывать методы класса.
+          Class_learn bee = new Class_learn();
+          bee.setValues("Bee", 50, new byte[] {0, 0, 0});
+          bot.printValue();
+          
        }
     }    
 }
