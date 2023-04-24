@@ -35,6 +35,15 @@ namespace csharp_learning{
           // Использование акссессора
           car.Weight = -100;
           System.Console.WriteLine(car.Weight);
+
+          // Создаем объект на основе класса Killer, которые является наследником первого - Class_learn.
+          Killer killer_bot = new Killer();
+          killer_bot.setValues("Killer_v2", 1000, new byte[] {10, 10, 10});
+          killer_bot.printValue();
+          //killer_bot.Health = 100;
+          killer_bot.Lazer();
+
+          Killer assasin = new Killer("Assasin", 1000, new byte[] {0, 1, 0}, 20);
        }
     }    
 }
