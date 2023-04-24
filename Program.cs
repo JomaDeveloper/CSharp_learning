@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Collections.Generic;
 
 namespace csharp_learning{
 
@@ -44,6 +45,23 @@ namespace csharp_learning{
           killer_bot.Lazer();
 
           Killer assasin = new Killer("Assasin", 1000, new byte[] {0, 1, 0}, 20);
+
+          // as позволяет обрабатывать объект как родительский (к другому классу).
+          // is позволяет проверить принадлежность к определенному типу данных.
+          List<Killer> robots = new List<Killer>();
+          robots.Add(new Killer("Alex", 400, new byte[] {30, 1, 0}, 20));
+          robots.Add(new Killer("Bob", 200, new byte[] {10, 1, 0}, 30));
+          robots.Add(new Killer("Sesh", 100, new byte[] {0, 11, 0}, 40));
+          robots.Add(new Killer("Carl", 600, new byte[] {0, 1, 20}, 50));
+
+          Class_learn newRobot = null;
+          foreach(Killer obj in robots){
+            if(obj.Name == "John"){
+              newRobot = obj as Class_learn;
+            }
+            System.Console.WriteLine(obj is Class_learn);
+          }
+
        }
     }    
 }

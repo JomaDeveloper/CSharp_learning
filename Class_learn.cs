@@ -23,7 +23,7 @@ namespace csharp_learning{
         // Конструктор. Действия при создании объекта. Название должно быть то же, что и название класса.
         // Может создавать сколько угодно конструкторов.
         public Class_learn(string _name, int _weight, byte[] _coordinates){
-            System.Console.WriteLine("Object has been created");
+            //System.Console.WriteLine("Object has been created");
             setValues(_name, _weight, _coordinates);
             count++;
         }
@@ -51,6 +51,13 @@ namespace csharp_learning{
                 else
                     this.weight = value; // value нигде не фигурирует, по умолчанию пытается установить внутри акссесора.
             }
+        }
+
+        public string Name{
+            get{
+                return this.name;
+            }
+             private set{}
         }
 
         //Акссесоры могут быть без полей, но с ними можно взаимодействовать.
