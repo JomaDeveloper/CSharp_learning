@@ -32,6 +32,7 @@ namespace csharp_learning{
             count++;
         }
 
+    
         // Переменные характеристик объектов класса.
         public string name;
         public int weight;
@@ -42,6 +43,21 @@ namespace csharp_learning{
             name = _name;
             weight = _weight;
             coordinates = _coordinates;
+        }
+
+        // Нельзя указывать идентичные названия параметров как в полей класса. Нельзя называть параметр функции name или eight, как у класса.
+        // Компилятор не понимает, что к чему мы пытаемся присвоить.
+        // Но мы можем использовать this, который говорит, что мы обращаемся к этому же классу.
+        // Компилятор понимает, что мы обращаемся к классу поля и присваем стороннее значение параметра.
+        // Обычно его еще используют при методах, чтобы показать, что он явно в данном классе, а не другому.
+        // Например  this.setValues(_name, _weight, _coordinates);
+        // this НЕЛЬЗЯ принимать вместе со статическим модификатором (static) из-за того, что this работает с полями и методами, 
+        // которые принадлежат к объектам, а не к класуу в целом в отличие от static, которые относит поле или метод к классу в целом.
+
+        public void setValues_v2(string name, int weight, byte[] coordinates){
+            this.name = name;
+            this.weight = weight;
+            this.coordinates = coordinates;
         }
 
         public void printValue(){
