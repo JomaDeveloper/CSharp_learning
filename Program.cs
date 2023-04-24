@@ -31,6 +31,10 @@ namespace csharp_learning{
           //Обращаемся к переменной static. Сразу через класс, а не его объекты.
           Class_learn.count = 5;
           Class_learn.Print();
+
+          // Использование акссессора
+          car.Weight = -100;
+          System.Console.WriteLine(car.Weight);
        }
     }    
 }

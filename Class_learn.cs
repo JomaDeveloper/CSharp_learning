@@ -32,11 +32,26 @@ namespace csharp_learning{
             count++;
         }
 
-    
         // Переменные характеристик объектов класса.
         public string name;
         public int weight;
         public byte[] coordinates;
+
+        // Аксессоры позволяют нам вытаскивать информацию по полю.
+        // Не явлсяется ни констурктором, ни методом.
+        // Получаем дополнительный набор возможностей.
+        public int Weight{
+            get{
+                System.Console.WriteLine("Результат: ");
+                return this.weight;
+            }
+            set{
+                if(value < 1)
+                    this.weight = 1;
+                else
+                    this.weight = value; // value нигде не фигурирует, по умолчанию пытается установить внутри акссесора.
+            }
+        }
 
         // Если мы создадим функцию, то каждый объект, созданный на основе этого класса, будет иметь доступ к этой функции. 
         public void setValues(string _name, int _weight, byte[] _coordinates){
