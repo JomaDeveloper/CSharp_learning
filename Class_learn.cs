@@ -2,7 +2,7 @@ using System;
 
 namespace csharp_learning{
 
-    class Class_learn{
+    class Class_learn:{
 
         // Static у поля или у метода обозначает, что мы сразу имеем доступ через класс, а не объекты.
         // То есть это никак не связано с объектами, сразу через класс.
@@ -88,7 +88,7 @@ namespace csharp_learning{
         }
 
         // virtual обозначает, что это виртуальный метод, а значит, что мы можем переписать его функционал в классе-наследнике.
-        public virtual void printValue(){
+        public virtual void  printValue(){
             System.Console.WriteLine(name + " weight:" + weight + ". Coordinates: ");
             foreach(byte el in coordinates){
                 System.Console.WriteLine(el);
