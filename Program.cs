@@ -64,11 +64,14 @@ namespace csharp_learning{
             System.Console.WriteLine(obj is Class_learn);
           }
 
+          // Использование изменного виртуального метода.
           Bot bott = new Bot("Alex", 400, new byte[] {30, 1, 0});
-          bott.printValue();
+          bott.printValue();      
 
-
-
+          // Создание объекта на основе структуры аналогичен
+          Book idiot = new Book();
+          idiot.setValues("Идиот", "Достоевский");
+          idiot.printValues();
        }
 
       // Перегрузка методов, которая подстраивается при определенном вызове.
