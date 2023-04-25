@@ -7,7 +7,7 @@ namespace csharp_learning{
     class Program{
         
         static void Main() {
-          // Создаем объект. Он имеет доступен ко всем характеристикам класса.
+          // Создтаем объект. Он имеет доступен ко всем характеристикам класса.
             Class_learn bot = new Class_learn();
             bot.name = "Bot";
             bot.weight = 800;
@@ -64,6 +64,20 @@ namespace csharp_learning{
             System.Console.WriteLine(obj is Class_learn);
           }
 
+          Bot bott = new Bot("Alex", 400, new byte[] {30, 1, 0});
+          bott.printValue();
+
+       }
+
+      // Перегрузка методов, которая подстраивается при определенном вызове.
+       public static void Multiply(int a, int b){
+          int res = a * b;
+          System.Console.WriteLine("Result: {0}", res);
+       }
+
+        public static void Multiply(int a, int b, int c){
+          int res = a * b * c;
+          System.Console.WriteLine("Result: {0}", res);
        }
     }    
 }
