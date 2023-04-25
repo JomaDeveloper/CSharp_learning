@@ -1,33 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "E:\\CSharp_learning\\CSharp_learning.csproj": {}
+    "D:\\CSharp\\CSharp_learning\\CSharp_learning.csproj": {}
   },
   "projects": {
-    "E:\\CSharp_learning\\CSharp_learning.csproj": {
+    "D:\\CSharp\\CSharp_learning\\CSharp_learning.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\CSharp_learning\\CSharp_learning.csproj",
+        "projectUniqueName": "D:\\CSharp\\CSharp_learning\\CSharp_learning.csproj",
         "projectName": "CSharp_learning",
-        "projectPath": "E:\\CSharp_learning\\CSharp_learning.csproj",
-        "packagesPath": "C:\\Users\\webma\\.nuget\\packages\\",
-        "outputPath": "E:\\CSharp_learning\\obj\\",
+        "projectPath": "D:\\CSharp\\CSharp_learning\\CSharp_learning.csproj",
+        "packagesPath": "C:\\Users\\Кирилл\\.nuget\\packages\\",
+        "outputPath": "D:\\CSharp\\CSharp_learning\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\webma\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Кирилл\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "http://nexus:8081/repository/nuget-private/": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
