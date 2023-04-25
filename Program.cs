@@ -44,7 +44,7 @@ namespace csharp_learning{
           //killer_bot.Health = 100;
           killer_bot.Lazer();
 
-          Killer assasin = new Killer("Assasin", 1000, new byte[] {0, 1, 0}, 20);
+          Killer assasin = new Killer("Assasin", 1000, new byte[] {0, 1, 0}, 20, Typpe.Enemy);
           // Используем метод наследственного класса на основне виртуального метода родительского класса.
           assasin.printValue();
 
@@ -66,6 +66,8 @@ namespace csharp_learning{
 
           Bot bott = new Bot("Alex", 400, new byte[] {30, 1, 0});
           bott.printValue();
+
+
 
        }
 

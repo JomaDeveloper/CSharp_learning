@@ -2,7 +2,7 @@ using System;
 
 namespace csharp_learning{
 
-    class Class_learn:{
+    class Class_learn{
 
         // Static у поля или у метода обозначает, что мы сразу имеем доступ через класс, а не объекты.
         // То есть это никак не связано с объектами, сразу через класс.
