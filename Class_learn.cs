@@ -87,7 +87,8 @@ namespace csharp_learning{
             this.coordinates = coordinates;
         }
 
-        public void printValue(){
+        // virtual обозначает, что это виртуальный метод, а значит, что мы можем переписать его функционал в классе-наследнике.
+        public virtual void printValue(){
             System.Console.WriteLine(name + " weight:" + weight + ". Coordinates: ");
             foreach(byte el in coordinates){
                 System.Console.WriteLine(el);

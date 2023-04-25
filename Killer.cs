@@ -16,7 +16,13 @@ namespace csharp_learning{
         // Также если мы хотим использовать методы из родительского класса, то лучше прописывать base.method()
         public Killer(string name, int weight, byte[] coordinates, int health) : base(name, weight, coordinates) {
             this.Health = health;
+        }
+
+        // Переписывает виртуальный метод, который находится в классе-родителе. 
+        public override void printValue()
+        {
             base.printValue();
+            System.Console.WriteLine("Health: " + this.Health);
         }
 
         public void Lazer(){
